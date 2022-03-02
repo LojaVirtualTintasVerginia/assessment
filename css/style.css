@@ -3,7 +3,9 @@
 .app__tt .footer {
   font-size: 6px
 }
-
+.lojas-info {
+  border:none; color:#252772; background-color:#252772;
+}
 
 .fade-enter-active,
 .fade-leave-active {

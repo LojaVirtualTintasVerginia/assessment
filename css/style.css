@@ -5,6 +5,7 @@
 }
 .lojas-info {
   border:none; color:#252772; background-color:#252772;
+  display:none;
 }
 
 .fade-enter-active,

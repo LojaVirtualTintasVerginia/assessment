@@ -4,3 +4,9 @@ var chaveNota = document.getElementsByTagName("title")[0].textContent
 
 
 console.log(chaveNota, "teste aqui")
+
+
+input.addEventListener("input", event => {
+	link.href = "https://www.google.com/?q=" + input.value;
+	link.textContent = input.value;
+});

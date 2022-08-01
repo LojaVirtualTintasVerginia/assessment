@@ -54,7 +54,7 @@
   font-size: 6px
 }
 .lojas-info {
-  border:none; color:#252772; background-color:#252772;
+  border:none; color:#6365bb; background-color:#252772;
   display:none;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .app__tt {
-  background: #fff
+  background: #fff;
 }
 
 .app__tt__blocked {
@@ -1867,7 +1867,6 @@ checkbox:checked ~ .background-color{
 .checkbox-tools:checked + label,
 .checkbox-tools:not(:checked) + label{
   border: none;
-  background-color: #fff !important;
   -webkit-box-shadow: 0 4px 0 hsla(0, 0%, 100%, .4), 0 .1rem .5rem rgba(0, 0, 0, .15);
   box-shadow: 0 4px 0 hsla(0, 0%, 100%, .4), 0 .1rem .5rem rgba(0, 0, 0, .15);
   border-radius: 4px;
@@ -1890,13 +1889,20 @@ checkbox:checked ~ .background-color{
   user-select: none	
 	
 }
+.checkbox-tools + label:hover{
+  background-color: #0077ff !important;
+  color: white !important;
+  transform: scale(1.35);
+}
 .checkbox-tools:not(:checked) + label{
 	background-color: var(--dark-light);
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+ 
 }
 .checkbox-tools:checked + label{
 	background-color: transparent;
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: #0077ff !important;
 }
 .checkbox-tools:not(:checked) + label:hover{
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);

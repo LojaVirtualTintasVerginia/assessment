@@ -1401,6 +1401,7 @@ html {
   }
 }
 
+
 .unsubscribe .survey-card .primary {
   -webkit-box-pack: center !important;
   -ms-flex-pack: center !important;
@@ -1871,7 +1872,7 @@ checkbox:checked ~ .background-color{
   box-shadow: 0 4px 0 hsla(0, 0%, 100%, .4), 0 .1rem .5rem rgba(0, 0, 0, .15);
   border-radius: 4px;
   height: 52px;
-	width: 9.5%;
+	width: 9.4%;
   line-height: 52px;
   margin: 1px;
   font-size: 24px;

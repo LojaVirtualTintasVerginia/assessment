@@ -20,7 +20,22 @@
 
   <link href="/css/app.02756c44.css" rel="preload" as="style">
   <link href="css/app.02756c44.css" rel="stylesheet">
-
+  <script>
+    function mascara(i){
+     
+     var v = i.value;
+     
+     if(isNaN(v[v.length-1])){ // impede entrar outro caractere que não seja número
+        i.value = v.substring(0, v.length-1);
+        return;
+     }
+     
+     i.setAttribute("maxlength", "14");
+     if (v.length == 3 || v.length == 7) i.value += ".";
+     if (v.length == 11) i.value += "-";
+  
+  }
+  </script>
 
 </head>
 
@@ -39,7 +54,7 @@
                 class="primary d-flex flex-column justify-content-around align-items-stretch col-12 col-lg-6 p-2 pt-4 p-sm-4 pb-5 pb-sm-0 bg-accent neutral">
                 <div class="c-primary-header">
                   <div class="text-center">
-                    <h1 class="mb-4 d-none d-sm-block c-primary-header-title">Avalie</h1>
+                    <h1 style="" class="mb-4 d-none d-sm-block c-primary-header-title">Avalie</h1>
                     <div class="lead pt-0 c-primary-header-question"><span data-id="introText">De 0 a 10, quanto você
                         recomendaria <h1 class="my-1">Tintas Verginia?</h1></span></div>
                   </div>
@@ -48,50 +63,99 @@
                 <div class="">
                   <!---->
                   <!---->
-                  <div class="">
+                  <div style="margin-bottom: 100px;">
                     <!---->
-                    <div class="row no-gutters wrap__btn c-primary-content-input">
-                                    <input class="checkbox-tools" type="radio"  id="tool-1" name="entry.617082297" value="1" >
-                                    <label class="for-checkbox-tools" for="tool-1">
+                    <div class="row no-gutters wrap__btn c-primary-content-input" >
+                                    <input  class="checkbox-tools" type="radio"  id="tool-1" name="entry.617082297" value="1" >
+                                    <label class="for-checkbox-tools" for="tool-1" style="background-color: #b72224; color: #fff;">
                                       1
                                     </label><!--
                                     --><input class="checkbox-tools" type="radio" id="tool-2" name="entry.617082297" value="2">
-                                    <label class="for-checkbox-tools" for="tool-2">
+                                    <label class="for-checkbox-tools" for="tool-2" style="background-color: #d52029; color: #fff;">
                                       2
                                     </label><!--
                                     --><input class="checkbox-tools" type="radio" id="tool-3" name="entry.617082297" value="3">
-                                    <label class="for-checkbox-tools" for="tool-3">
+                                    <label class="for-checkbox-tools" for="tool-3"style="background-color: #e95223; color: #fff;">
                                       3
                                     </label><!--
                                     --><input class="checkbox-tools" type="radio"  id="tool-4" name="entry.617082297" value="4">
-                                    <label class="for-checkbox-tools" for="tool-4">
+                                    <label class="for-checkbox-tools" for="tool-4"style="background-color: #ea6f22; color: #fff;">
                                       4
                                     </label><!--
                                     --><input class="checkbox-tools" type="radio" id="tool-5" name="entry.617082297" value="5">
-                                    <label class="for-checkbox-tools" for="tool-5">
+                                    <label class="for-checkbox-tools" for="tool-5"style="background-color: #fdc729; color: #fff;">
                                       5
                                     </label><!--
                                     --><input class="checkbox-tools" type="radio" id="tool-6" name="entry.617082297" value="6">
-                                    <label class="for-checkbox-tools" for="tool-6">
+                                    <label class="for-checkbox-tools" for="tool-6"style="background-color: #ebdb0a; color: #fff;">
                                       6
                                     </label>
                                     <input class="checkbox-tools" type="radio"  id="tool-7" name="entry.617082297" value="7">
-                                    <label class="for-checkbox-tools" for="tool-7">
+                                    <label class="for-checkbox-tools" for="tool-7"style="background-color:#e5e044; color: #fff;">
                                       7
                                     </label>
                                     <input class="checkbox-tools" type="radio"  id="tool-8" name="entry.617082297" value="8">
-                                    <label class="for-checkbox-tools" for="tool-8">
+                                    <label class="for-checkbox-tools" for="tool-8" style="background-color:#c2d234; color: #fff;">
                                       8
                                     </label>
                                     <input class="checkbox-tools" type="radio"  id="tool-9" name="entry.617082297" value="9">
-                                    <label class="for-checkbox-tools" for="tool-9">
+                                    <label class="for-checkbox-tools" for="tool-9" style="background-color: #aec93c; color: #fff;">
                                       9
                                     </label>
                                     <input class="checkbox-tools" type="radio" id="tool-10" name="entry.617082297" value="10">
-                                    <label class="for-checkbox-tools" for="tool-10">
+                                    <label class="for-checkbox-tools" for="tool-10" style="background-color: #66b44e;color: #fff;">
                                       10
                                     </label>
                       </div>
+                      <hr>
+                      
+                      <div class="text-center"  style=" margin-bottom: 30px;">
+
+                        <div class="lead pt-0 c-primary-header-question"><span data-id="introText">De 0 a 10, como foi a entrega do pedido? 
+                          <h6 class="my-1">Prazo de entrega, disponibilidade e cortesia do motorista.</h6></span></div><br>
+                      </div>
+                      <div class="row no-gutters wrap__btn c-primary-content-input">
+                        <input class="checkbox-tools" type="radio"  id="tool-11" name="entry.1271540214" value="1"  >
+                        <label class="for-checkbox-tools" for="tool-11" style="background-color: #b72224; color: #fff;">
+                          1
+                        </label><!--
+                        --><input class="checkbox-tools" type="radio" id="tool-12" name="entry.1271540214" value="2">
+                        <label class="for-checkbox-tools" for="tool-12"style="background-color: #d52029; color: #fff;">
+                          2
+                        </label><!--
+                        --><input class="checkbox-tools" type="radio" id="tool-13" name="entry.1271540214" value="3">
+                        <label class="for-checkbox-tools" for="tool-13"style="background-color: #e95223; color: #fff;">
+                          3
+                        </label><!--
+                        --><input class="checkbox-tools" type="radio"  id="tool-14" name="entry.1271540214" value="4">
+                        <label class="for-checkbox-tools" for="tool-14"style="background-color: #ea6f22; color: #fff;">
+                          4
+                        </label><!--
+                        --><input class="checkbox-tools" type="radio" id="tool-15" name="entry.1271540214" value="5">
+                        <label class="for-checkbox-tools" for="tool-15"style="background-color: #fdc729; color: #fff;">
+                          5
+                        </label><!--
+                        --><input class="checkbox-tools" type="radio" id="tool-16" name="entry.1271540214" value="6">
+                        <label class="for-checkbox-tools" for="tool-16"style="background-color: #eada08; color: #fff;">
+                          6
+                        </label>
+                        <input class="checkbox-tools" type="radio"  id="tool-17" name="entry.1271540214" value="7">
+                        <label class="for-checkbox-tools" for="tool-17"style="background-color: #e5e044; color: #fff;">
+                          7
+                        </label>
+                        <input class="checkbox-tools" type="radio"  id="tool-18" name="entry.1271540214" value="8">
+                        <label class="for-checkbox-tools" for="tool-18"style="background-color: #c2d234; color: #fff;">
+                          8
+                        </label>
+                        <input class="checkbox-tools" type="radio"  id="tool-19" name="entry.1271540214" value="9">
+                        <label class="for-checkbox-tools" for="tool-19"style="background-color: #aec93c; color: #fff;">
+                          9
+                        </label>
+                        <input class="checkbox-tools" type="radio" id="tool-20" name="entry.1271540214" value="10">
+                        <label class="for-checkbox-tools" for="tool-20"style="background-color: #66b44e; color: #fff;">
+                          10
+                        </label>
+          </div>
                   </div>
                 </div>
               </div>
@@ -101,22 +165,6 @@
                   <div class="text-center py-2 c-secondary-header-title card-header">Deixe sua opinião</div>
                   <div class="class-list h-100">
                     <div class="h-100">
-                      <div class="class-item py-2 px-2 px-md-0">
-                        <div class="row no-gutters align-items-center c-secondary-ld">
-                          <div class="col text-dark class-text c-secondary-ld-title">Entrega - Prazo de entrega</div>
-                          <div class="col-auto">
-                            <input id="dont-like-delivery" class="" name="entry.850612856" type="radio" value="Não" />
-                            <label for="dont-like-delivery" class="btn-dislike btn ">
-                              <i class="far fa-thumbs-down fa-lg fa-fw"></i>
-                            </label>
-                            <input id="like-delivery" name="entry.850612856" type="radio" value="Sim" />
-                            <label for="like-delivery" class="btn-like btn">
-                              <i class="far fa-thumbs-up fa-lg fa-fw"></i>
-                            </label>
-
-                          </div>
-                        </div>
-                      </div>
                       <!---->
                       <div class="class-item py-2 px-2 px-md-0">
                         <div class="row no-gutters align-items-center c-secondary-ld">
@@ -130,29 +178,9 @@
                             <label for="like-side" class="btn-like btn">
                               <i class="far fa-thumbs-up fa-lg fa-fw"></i>
                             </label>
-
                           </div>
                         </div>
                       </div>
-
-                      <div class="class-item py-2 px-2 px-md-0">
-                        <div class="row no-gutters align-items-center c-secondary-ld">
-                          <div class="col text-dark class-text c-secondary-ld-title">Entrega - Produto entregue conforme
-                            a compra</div>
-                          <div class="col-auto">
-                            <input id="dont-like-product" class="" name="entry.135995631" type="radio" value="Não" />
-                            <label for="dont-like-product" class="btn-dislike btn ">
-                              <i class="far fa-thumbs-down fa-lg fa-fw"></i>
-                            </label>
-                            <input id="like-product" name="entry.1639162489" type="radio" value="Sim" />
-                            <label for="like-product" class="btn-like btn">
-                              <i class="far fa-thumbs-up fa-lg fa-fw"></i>
-                            </label>
-
-                          </div>
-                        </div>
-                      </div>
-
                       <input  class="lojas-info" name="entry.821058471" value="Hauer">
                       <div class="class-item py-2 px-2 px-md-0">
                         <div class="row no-gutters align-items-center c-secondary-ld">
@@ -188,6 +216,40 @@
                           </div>
                         </div>
                       </div>
+                      <div class="class-item py-2 px-2 px-md-0">
+                        <div class="row no-gutters align-items-center c-secondary-ld">
+                          <div class="col text-dark class-text c-secondary-ld-title">Entrega - Prazo de entrega</div>
+                          <div class="col-auto">
+                            <input id="dont-like-delivery" class="" name="entry.850612856" type="radio" value="Não" />
+                            <label for="dont-like-delivery" class="btn-dislike btn ">
+                              <i class="far fa-thumbs-down fa-lg fa-fw"></i>
+                            </label>
+                            <input id="like-delivery" name="entry.850612856" type="radio" value="Sim" />
+                            <label for="like-delivery" class="btn-like btn">
+                              <i class="far fa-thumbs-up fa-lg fa-fw"></i>
+                            </label>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="class-item py-2 px-2 px-md-0">
+                        <div class="row no-gutters align-items-center c-secondary-ld">
+                          <div class="col text-dark class-text c-secondary-ld-title">Entrega - Produto entregue conforme
+                            a compra</div>
+                          <div class="col-auto">
+                            <input id="dont-like-product" class="" name="entry.135995631" type="radio" value="Não" />
+                            <label for="dont-like-product" class="btn-dislike btn ">
+                              <i class="far fa-thumbs-down fa-lg fa-fw"></i>
+                            </label>
+                            <input id="like-product" name="entry.1639162489" type="radio" value="Sim" />
+                            <label for="like-product" class="btn-like btn">
+                              <i class="far fa-thumbs-up fa-lg fa-fw"></i>
+                            </label>
+
+                          </div>
+                        </div>
+                      </div>
                   </div>
                 </div>
                 <br>
@@ -212,6 +274,13 @@
                   <textarea id="commentArea" placeholder="Como podemos melhorar?"
                     class="mx-auto flex-fill form-control text-left px-2" name="entry.525827702"></textarea>
                 </div>
+                <br>
+                <div class="cpf">
+                  <div class="field-container">
+                    <label for="entry.833469137">CPF</label>
+                    <input oninput="mascara(this)" type="text" name="entry.833469137" placeholder="CPF" required/>
+
+                  </div></div>
                 <!---->
                 <br>
                 <button class="btn btn-primary btn-block btn-lg btn-avaliar text-uppercase mx-auto shadow-accent c-secondary-send-button bg-accent">

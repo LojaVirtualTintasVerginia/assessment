@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup com Contador</title>
+    <link rel="stylesheet" href="css/faustino.css">
+</head>
+<body>
+  <script>
+    let contador = 10;
+const intervalo = setInterval(function() {
+    contador--;
+    document.getElementById("contador").innerText = contador;
+    if (contador === 0) {
+        clearInterval(intervalo);
+        window.location.href = "https://www.tintasverginia.com.br/";
+    }
+}, 1000);
+  </script>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img src="Faustino.jpg" alt="Imagem do Popup">
+            <p>Redirecionando em <span id="contador">10</span> segundos...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

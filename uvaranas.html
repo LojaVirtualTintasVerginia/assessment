@@ -1,346 +1,192 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-
-  <meta http-equiv="Content-Language" content="pt-br">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="icon" href="https://www.tintasverginia.com.br/media/favicon/default/favicon-tintas.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="https://www.tintasverginia.com.br/media/favicon/default/favicon-tintas.ico" type="image/x-icon" />
-
-  <link rel="stylesheet" href="css/app.css">
-  <meta name="theme-color" content="#008fd5">
-  
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#008fd5">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Avalie Tintas Verginia</title>
-
-  <link href="/css/app.02756c44.css" rel="preload" as="style">
-  <link href="css/app.02756c44.css" rel="stylesheet">
-  <script>
-    function mascara(i){
-     
-     var v = i.value;
-     
-     if(isNaN(v[v.length-1])){ // impede entrar outro caractere que não seja número
-        i.value = v.substring(0, v.length-1);
-        return;
-     }
-     
-     i.setAttribute("maxlength", "14");
-     if (v.length == 3 || v.length == 7) i.value += ".";
-     if (v.length == 11) i.value += "-";
-  
-  }
-  </script>
-
-</head>
-
-<body><noscript>Desculpe, Seu navegador não suporta javascript. Tente de novo em um navegador apropriado.</noscript>
-  <div id="app">
-    <div id="app" class="fix-pointer">
-      <div class="content">
-        <div id="wrapper" class="container p-0 p-sm-auto">
-          <!---->
-          <!---->
-          <form action="https://docs.google.com/forms/d/e/1FAIpQLScHSQmj-EUtiQpkFgEcT5_yjWLEd78VhLToWmeAHn0wUV5FDA/formResponse">
-          <div class="wClasses"><img src="https://www.tintasverginia.com.br/skin/frontend/new/tintasverginia/images/loja-logo.png"
-              alt="" class="text-center mx-auto d-none d-block m-3 logo__empresa" style="height: 80px;">
-            <div class="row round-lg shadow-lg survey-card mb-1 mx-auto m-0">
-              <div
-                class="primary d-flex flex-column justify-content-around align-items-stretch col-12 col-lg-6 p-2 pt-4 p-sm-4 pb-5 pb-sm-0 bg-accent neutral">
-                <div class="c-primary-header">
-                  <div class="text-center">
-                    <h1 style="" class="mb-4 d-none d-sm-block c-primary-header-title">Avalie</h1>
-                    <div class="lead pt-0 c-primary-header-question"><span data-id="introText">De 0 a 10, quanto você
-                        recomendaria <h1 class="my-1">Tintas Verginia?</h1></span></div>
-                  </div>
-                </div>
-                <!---->
-                <div class="">
-                  <!---->
-                  <!---->
-                  <div style="margin-bottom: 100px;">
-                    <!---->
-                    <div class="row no-gutters wrap__btn c-primary-content-input" >
-                                    <input  class="checkbox-tools" type="radio"  id="tool-1" name="entry.617082297" value="1" >
-                                    <label class="for-checkbox-tools" for="tool-1" style="background-color: #b72224; color: #fff;">
-                                      1
-                                    </label><!--
-                                    --><input class="checkbox-tools" type="radio" id="tool-2" name="entry.617082297" value="2">
-                                    <label class="for-checkbox-tools" for="tool-2" style="background-color: #d52029; color: #fff;">
-                                      2
-                                    </label><!--
-                                    --><input class="checkbox-tools" type="radio" id="tool-3" name="entry.617082297" value="3">
-                                    <label class="for-checkbox-tools" for="tool-3"style="background-color: #e95223; color: #fff;">
-                                      3
-                                    </label><!--
-                                    --><input class="checkbox-tools" type="radio"  id="tool-4" name="entry.617082297" value="4">
-                                    <label class="for-checkbox-tools" for="tool-4"style="background-color: #ea6f22; color: #fff;">
-                                      4
-                                    </label><!--
-                                    --><input class="checkbox-tools" type="radio" id="tool-5" name="entry.617082297" value="5">
-                                    <label class="for-checkbox-tools" for="tool-5"style="background-color: #fdc729; color: #fff;">
-                                      5
-                                    </label><!--
-                                    --><input class="checkbox-tools" type="radio" id="tool-6" name="entry.617082297" value="6">
-                                    <label class="for-checkbox-tools" for="tool-6"style="background-color: #ebdb0a; color: #fff;">
-                                      6
-                                    </label>
-                                    <input class="checkbox-tools" type="radio"  id="tool-7" name="entry.617082297" value="7">
-                                    <label class="for-checkbox-tools" for="tool-7"style="background-color:#e5e044; color: #fff;">
-                                      7
-                                    </label>
-                                    <input class="checkbox-tools" type="radio"  id="tool-8" name="entry.617082297" value="8">
-                                    <label class="for-checkbox-tools" for="tool-8" style="background-color:#c2d234; color: #fff;">
-                                      8
-                                    </label>
-                                    <input class="checkbox-tools" type="radio"  id="tool-9" name="entry.617082297" value="9">
-                                    <label class="for-checkbox-tools" for="tool-9" style="background-color: #aec93c; color: #fff;">
-                                      9
-                                    </label>
-                                    <input class="checkbox-tools" type="radio" id="tool-10" name="entry.617082297" value="10">
-                                    <label class="for-checkbox-tools" for="tool-10" style="background-color: #66b44e;color: #fff;">
-                                      10
-                                    </label>
-                      </div>
-                      <hr>
-                      
-                      <div class="text-center"  style=" margin-bottom: 30px;">
-
-                        <div class="lead pt-0 c-primary-header-question"><span data-id="introText">De 0 a 10, como foi a entrega do pedido? 
-                          <h6 class="my-1">Prazo de entrega, disponibilidade e cortesia do motorista.</h6></span></div><br>
-                      </div>
-                      <div class="row no-gutters wrap__btn c-primary-content-input">
-                        <input class="checkbox-tools2" type="radio"  id="tool-11" name="entry.2120419282" value="1"  >
-                        <label class="for-checkbox-tools2" for="tool-11" style="background-color: #b72224; color: #fff;">
-                          1
-                        </label><!--
-                        --><input class="checkbox-tools2" type="radio" id="tool-12" name="entry.2120419282" value="2">
-                        <label class="for-checkbox-tools2" for="tool-12"style="background-color: #d52029; color: #fff;">
-                          2
-                        </label><!--
-                        --><input class="checkbox-tools2" type="radio" id="tool-13" name="entry.2120419282" value="3">
-                        <label class="for-checkbox-tools2" for="tool-13"style="background-color: #e95223; color: #fff;">
-                          3
-                        </label><!--
-                        --><input class="checkbox-tools2" type="radio"  id="tool-14" name="entry.2120419282" value="4">
-                        <label class="for-checkbox-tools2" for="tool-14"style="background-color: #ea6f22; color: #fff;">
-                          4
-                        </label><!--
-                        --><input class="checkbox-tools2" type="radio" id="tool-15" name="entry.2120419282" value="5">
-                        <label class="for-checkbox-tools2" for="tool-15"style="background-color: #fdc729; color: #fff;">
-                          5
-                        </label><!--
-                        --><input class="checkbox-tools2" type="radio" id="tool-16" name="entry.2120419282" value="6">
-                        <label class="for-checkbox-tools2" for="tool-16"style="background-color: #eada08; color: #fff;">
-                          6
-                        </label>
-                        <input class="checkbox-tools2" type="radio"  id="tool-17" name="entry.2120419282" value="7">
-                        <label class="for-checkbox-tools2" for="tool-17"style="background-color: #e5e044; color: #fff;">
-                          7
-                        </label>
-                        <input class="checkbox-tools2" type="radio"  id="tool-18" name="entry.2120419282" value="8">
-                        <label class="for-checkbox-tools2" for="tool-18"style="background-color: #c2d234; color: #fff;">
-                          8
-                        </label>
-                        <input class="checkbox-tools2" type="radio"  id="tool-19" name="entry.2120419282" value="9">
-                        <label class="for-checkbox-tools2" for="tool-19"style="background-color: #aec93c; color: #fff;">
-                          9
-                        </label>
-                        <input class="checkbox-tools2" type="radio" id="tool-20" name="entry.2120419282" value="10">
-                        <label class="for-checkbox-tools2" for="tool-20"style="background-color: #66b44e; color: #fff;">
-                          10
-                        </label>
-          </div>
-                  </div>
-                </div>
-              </div>
-              <div class="secondary d-flex flex-column justify-content-around align-items-stretch col-12 col-lg-6 px-2 pb-5 pt-sm-1 pb-sm-3 px-sm-4 py-sm-0 mt-sm-0 mt-n4">
-                <!---->
-                <div class="card__helper c-secondary-header flex-fill card">
-                  <div class="text-center py-2 c-secondary-header-title card-header">Deixe sua opinião</div>
-                  <div class="class-list h-100">
-                    <div class="h-100">
-                      <!---->
-                      <div class="class-item py-2 px-2 px-md-0">
-                        <div class="row no-gutters align-items-center c-secondary-ld">
-                          <div class="col text-dark class-text c-secondary-ld-title">Atendimento vendedor</div>
-                          <div class="col-auto">
-                            <input id="dont-like-side" class="" name="entry.1950718542" type="radio" value="Não" />
-                            <label for="dont-like-side" class="btn-dislike btn ">
-                              <i class="far fa-thumbs-down fa-lg fa-fw"></i>
-                            </label>
-                            <input id="like-side" class="" name="entry.1950718542" type="radio" value="Sim" />
-                            <label for="like-side" class="btn-like btn">
-                              <i class="far fa-thumbs-up fa-lg fa-fw"></i>
-                            </label>
-
-                          </div>
-                        </div>
-                      </div>
-
-                      <input  class="lojas-info" name="entry.811268155" value="Uvaranas-PG">
-                      <div class="class-item py-2 px-2 px-md-0">
-                        <div class="row no-gutters align-items-center c-secondary-ld">
-                          <div class="col text-dark class-text c-secondary-ld-title"> Informações sobre produto
-                            para decidir a compra</div>
-                          <div class="col-auto">
-                            <input id="dont-like-info" class="" name="entry.2057831749" type="radio" value="Não" />
-                            <label for="dont-like-info" class="btn-dislike btn ">
-                              <i class="far fa-thumbs-down fa-lg fa-fw"></i>
-                            </label>
-                            <input id="like-info" name="entry.2057831749" type="radio" value="Sim" />
-                            <label for="like-info" class="btn-like btn">
-                              <i class="far fa-thumbs-up fa-lg fa-fw"></i>
-                            </label>
-
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="class-item py-2 px-2 px-md-0">
-                        <div class="row no-gutters align-items-center c-secondary-ld">
-                          <div class="col text-dark class-text c-secondary-ld-title">Processo de cadastro e pagamento</div>
-                          <div class="col-auto">
-                            <input id="dont-like-payment" class="" name="entry.997318052" type="radio" value="Não" />
-                            <label for="dont-like-payment" class="btn-dislike btn ">
-                              <i class="far fa-thumbs-down fa-lg fa-fw"></i>
-                            </label>
-                            <input id="like-payment" name="entry.997318052" type="radio" value="Sim" />
-                            <label for="like-payment" class="btn-like btn">
-                              <i class="far fa-thumbs-up fa-lg fa-fw"></i>
-                            </label>
-
-                          </div>
-                        </div>
-                      </div>
-                      <div id="deliveryOptions" style="display: none;">
-                      
-                      <div class="class-item py-2 px-2 px-md-0">
-                        <div class="row no-gutters align-items-center c-secondary-ld">
-                          <div class="col text-dark class-text c-secondary-ld-title">Entrega - Prazo de entrega</div>
-                          <div class="col-auto">
-                            <input id="dont-like-delivery" class="" name="entry.850612856" type="radio" value="Não" />
-                            <label for="dont-like-delivery" class="btn-dislike btn ">
-                              <i class="far fa-thumbs-down fa-lg fa-fw"></i>
-                            </label>
-                            <input id="like-delivery" name="entry.850612856" type="radio" value="Sim" />
-                            <label for="like-delivery" class="btn-like btn">
-                              <i class="far fa-thumbs-up fa-lg fa-fw"></i>
-                            </label>
-
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="class-item py-2 px-2 px-md-0">
-                        <div class="row no-gutters align-items-center c-secondary-ld">
-                          <div class="col text-dark class-text c-secondary-ld-title">Entrega - Produto entregue conforme
-                            a compra</div>
-                          <div class="col-auto">
-                            <input id="dont-like-product" class="" name="entry.135995631" type="radio" value="Não" />
-                            <label for="dont-like-product" class="btn-dislike btn ">
-                              <i class="far fa-thumbs-down fa-lg fa-fw"></i>
-                            </label>
-                            <input id="like-product" name="entry.1639162489" type="radio" value="Sim" />
-                            <label for="like-product" class="btn-like btn">
-                              <i class="far fa-thumbs-up fa-lg fa-fw"></i>
-                            </label>
-
-                          </div>
-                        </div>
-                      </div>
-                      <div class="class-item py-2 px-2 px-md-0">
-                        <div class="row no-gutters align-items-center c-secondary-ld">
-                          <div class="col text-dark class-text c-secondary-ld-title">Entrega - Gentileza do (a) entregador (a)</div>
-                          <div class="col-auto">
-                            <input id="dont-like-kindness" class="" name="entry.1461541536" type="radio" value="Não" />
-                            <label for="dont-like-kindness" class="btn-dislike btn ">
-                              <i class="far fa-thumbs-down fa-lg fa-fw"></i>
-                            </label>
-                            <input id="like-kindness" name="entry.1461541536" type="radio" value="Sim" />
-                            <label for="like-kindness" class="btn-like btn">
-                              <i class="far fa-thumbs-up fa-lg fa-fw"></i>
-                            </label>
-
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <br>
-                <div>
-                  <div class="kmPFvf">
-                    <select name="entry.2073437934" id="tipoimovel" class="form-control" value-group="tipo">
-                      <option value="" style="display: none;">Onde você conheceu a Verginia?</option>
-                      <option value="Google">Google</option>
-                      <option value="Indicação de amigos">Indicação de amigos</option>
-                      <option value="Facebook">Facebook</option>
-                      <option value="Outdoor / Painel">Outdoor / Painel</option>
-                      <option value="Televisão">Televisão</option>
-                      <option value="YouTube">YouTube</option>
-                      <option value="Rádio">Rádio</option>
-                      <option value="Instagram">Instagram</option>
-                      <option value="Indicação de (pintor, arquiteto ou construtor)">Indicação de (pintor, arquiteto ou construtor)</option>
-                    </select>
-                    </div>
-                </div>
-                <div class="card d-flex c-secondary-comment" style="min-height: 120px;">
-                  <div class="d-w-none card-header c-secondary-comment-title">Como podemos melhorar?</div>
-                  <textarea id="commentArea" placeholder="Como podemos melhorar?"
-                    class="mx-auto flex-fill form-control text-left px-2" name="entry.525827702"></textarea>
-                </div>
-                <br>
-                <div class="cpf">
-                  <div class="field-container">
-                    <label for="entry.242602485">CPF</label>
-                    <input oninput="mascara(this)" type="text" name="entry.242602485" placeholder="CPF" required/>
-
-                  </div></div>
-                <!---->
-                <br>
-                <button class="btn btn-primary btn-block btn-lg btn-avaliar text-uppercase mx-auto shadow-accent c-secondary-send-button bg-accent">
-                  Enviar
-                </button>
-              </div>
-            </div>
-          </div>
-        </form>
-          <!---->
-          <!---->
-          <div>
-            <div id="enrichmentModal" tabindex="-1" aria-labelledby="enrichmentModal" aria-modal="true" role="dialog"
-              class="modal fade">
-              <div role="document" class="modal-dialog modal-sm modal-dialog-centered">
-
-              </div>
-            </div>
-            <div id="backdrop" class="modal-backdrop fade show" style="display: none;"></div>
-          </div>
-          <div>
-            <div id="backdropError" class="modal-backdrop fade show" style="display: none;"></div>
-          </div>
-        </div>
-      </div>
-      <!---->
-    </div>
-  </div>
-  <script>
-    // Função para exibir as opções de entrega
-    function showDeliveryOptions() {
-      document.getElementById('deliveryOptions').style.display = 'block';
-    }
-  
-    // Adiciona o evento de clique aos botões de avaliação
-    document.querySelectorAll('.checkbox-tools2').forEach(function(element) {
-      element.addEventListener('click', showDeliveryOptions);
-    });
-  </script>
-</body>
-
-</html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-mail Tintas Verginia</title>
+    <style type="text/css">
+        .ExternalClass * {
+            line-height: 100%;
+        }
+        .a5q {
+            display: none!important;
+        }
+        table,
+        tr,
+        td {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+  </head>
+  <body>
+    <table border="0" cellpadding="0" cellspacing="0" align="center" width="650" >
+      <tbody>
+        <tr>
+          <td data-content-region-name="header">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="96%" style="max-width:650px; width:96%;" bgcolor="#2f358f">
+              <tbody>
+                <tr>
+                  <td data-content-region-name="Region1" align="center" valign="middle" style="line-height:15px;">
+                    <table cellspacing="0" cellpadding="0" border="0">
+                      <tbody>
+                        <tr>
+                          <td align="center" valign="middle">
+                            <a href="tintasverginia.com.br" target="_blank" alt="tintasverginia.com.br">
+                              <img alt="tintasverginia.com.br" height="80" src="https://verginia.vtexassets.com/assets/vtex/assets-builder/verginia.builderio/1.3.1/footer/footer-logo___2ae1d29f0b62faf9d29f0f62285314d4.png" border="0" width="152" height="100">
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <img src="https://www.tintasverginia.com.br/media/wysiwyg/EmailsTransacionais/faixa1.png" alt=""
+                              style="width:100%;display:block" class="CToWUd">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table  align="center" border="0" cellpadding="0" cellspacing="0" width="96%" style="max-width:650px; width:96%;" bgcolor="#2f358f">
+              <tr>
+                <td align="left" valign="top" bgcolor="#FFFFFF" class="container-padding"style="background-color:#FFFFFF;padding-left: 23px;padding-right: 20px;line-height: 20px; font-size: 14px;color: #666666;border-collapse: collapse;">
+                  <div style="height:30px;">&nbsp;</div>
+                  <table width="580" border="0" align="center" cellpadding="0" cellspacing="0" class="expander"style="border-spacing: 0;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt; font-family:Arial, Helvetica, sans-serif;">
+                    <tr>
+                      <td width="50%" align="left" class="force-col" style="border-collapse: collapse;">
+                        <strong class="nome-cliente"
+                          style="font-size:20px;text-align:right;color:#8c8c8c;">Ol&aacute;,</strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="50%" align="left" class="force-col" style="border-collapse: collapse; padding:20px 0;">
+                        <strong class="nome-cliente" style="font-size:20px;text-align:right;color:#58c22e;">Em anexo está a
+                          sua nota fiscal :)</strong>
+                      </td>
+                    </tr>
+                   <!-- <tr>
+                      <td width="50%" align="left" class="force-col" style="border-collapse: collapse;">
+                        <strong class="nome-cliente" style="font-size:20px;text-align:right;color:#8c8c8c;">Obrigada por
+                          comprar na Tintas Verginia
+                        </strong>
+                      </td>
+                    </tr>-->
+                    <tr>
+                      <tbody>
+                        <tr >
+                          <td style="padding:25px 0px 0px 0px; font-size:20px;color:#739964;" class="force-col" style="border-collapse: collapse;">
+                            Sua opinião é
+                            muito importante
+                        </tr>
+                        <tr>
+                          <td style="padding:15px 0px 0px 0px">
+                            De 0 a 10, quanto você recomendaria <br> a Tintas Verginia? <br>Essa informação é importante para podermos melhorar.</td>
+                            
+                        </tr>
+                        <tr>
+                          <td style="padding:20px 0px 18px 0px"><b>Selecione:</b></td>
+                        </tr>
+                      </tbody>
+                    </tr>
+                    <table style="">
+                      <tbody>
+                        <tr style="text-align:center">
+                          <td style="background:#c63241;padding:0px;width:25px;height:40px;border-radius:5px;border-bottom:0px solid #c63241;color:#b9b9b9;font-weight:bold;font-size:20px;border-top:1px solid #ffffff;border-left:1px solid #ffffff;border-right:1px solid #ffffff">
+                            <a href="https://avaliacao-tintas-verginia.netlify.app/uvaranas" style="text-decoration:none;color:#ffffff" target="_blank" data-saferedirecturl="https://avaliacao-tintas-verginia.netlify.app/uvaranas">0</a>
+                          </td>
+                          <td
+                          style="background:#c63241;padding:0px;width:25px;height:40px;border-radius:5px;border-bottom:0px solid #c63241;color:#b9b9b9;font-weight:bold;font-size:20px;border-top:1px solid #ffffff;border-left:1px solid #ffffff;border-right:1px solid #ffffff">
+                          <a href="https://avaliacao-tintas-verginia.netlify.app/uvaranas"style="text-decoration:none;color:#ffffff" target="_blank"
+                            data-saferedirecturl="https://avaliacao-tintas-verginia.netlify.app/uvaranas">1</a>
+                          </td>
+                          <td style="background:#c63241;padding:0px;width:25px;height:40px;border-radius:5px;border-bottom:0px solid #c63241;color:#b9b9b9;font-weight:bold;font-size:20px;border-top:1px solid #ffffff;border-left:1px solid #ffffff;border-right:1px solid #ffffff">
+                            <a href="https://avaliacao-tintas-verginia.netlify.app/uvaranas" style="text-decoration:none;color:#ffffff" target="_blank" data-saferedirecturl="https://avaliacao-tintas-verginia.netlify.app/uvaranas">2</a>
+                          </td>
+                          <td style="background:#c63241;padding:0px;width:25px;height:40px;border-radius:5px;border-bottom:0px solid #c63241;color:#b9b9b9;font-weight:bold;font-size:20px;border-top:1px solid #ffffff;border-left:1px solid #ffffff;border-right:1px solid #ffffff">
+                            <a href="https://avaliacao-tintas-verginia.netlify.app/uvaranas" style="text-decoration:none;color:#ffffff" target="_blank" data-saferedirecturl="https://avaliacao-tintas-verginia.netlify.app/uvaranas">3</a>
+                          </td>
+                          <td style="background:#c63241;padding:0px;width:25px;height:40px;border-radius:5px;border-bottom:0px solid #c63241;color:#b9b9b9;font-weight:bold;font-size:20px;border-top:1px solid #ffffff;border-left:1px solid #ffffff;border-right:1px solid #ffffff">
+                            <a href="https://avaliacao-tintas-verginia.netlify.app/uvaranas" style="text-decoration:none;color:#ffffff" target="_blank" data-saferedirecturl="https://avaliacao-tintas-verginia.netlify.app/uvaranas">4</a>
+                          </td>
+                          <td style="background:#c63241;padding:0px;width:25px;height:40px;border-radius:5px;border-bottom:0px solid #c63241;color:#b9b9b9;font-weight:bold;font-size:20px;border-top:1px solid #ffffff;border-left:1px solid #ffffff;border-right:1px solid #ffffff">
+                            <a href="https://avaliacao-tintas-verginia.netlify.app/uvaranas" style="text-decoration:none;color:#ffffff" target="_blank" data-saferedirecturl="https://avaliacao-tintas-verginia.netlify.app/uvaranas">5</a>
+                          </td>
+                          <td style="background:#c63241;padding:0px;width:25px;height:40px;border-radius:5px;border-bottom:0px solid #c63241;color:#b9b9b9;font-weight:bold;font-size:20px;border-top:1px solid #ffffff;border-left:1px solid #ffffff;border-right:1px solid #ffffff">
+                            <a href="https://avaliacao-tintas-verginia.netlify.app/uvaranas" style="text-decoration:none;color:#ffffff" target="_blank" data-saferedirecturl="https://avaliacao-tintas-verginia.netlify.app/uvaranas">6</a>
+                          </td>
+                          <td style="background:#f3cb2e;padding:0px;width:25px;height:40px;border-radius:5px;border-bottom:0px solid #f3cb2e;color:#b9b9b9;font-weight:bold;font-size:20px;border-top:1px solid #ffffff;border-left:1px solid #ffffff;border-right:1px solid #ffffff">
+                            <a href="https://avaliacao-tintas-verginia.netlify.app/uvaranas" style="text-decoration:none;color:#ffffff" target="_blank" data-saferedirecturl="https://avaliacao-tintas-verginia.netlify.app/uvaranas">7</a>
+                          </td>
+                          <td style="background:#f3cb2e;padding:0px;width:25px;height:40px;border-radius:5px;border-bottom:0px solid #f3cb2e;color:#b9b9b9;font-weight:bold;font-size:20px;border-top:1px solid #ffffff;border-left:1px solid #ffffff;border-right:1px solid #ffffff">
+                            <a href="https://avaliacao-tintas-verginia.netlify.app/uvaranas" style="text-decoration:none;color:#ffffff" target="_blank" data-saferedirecturl="https://avaliacao-tintas-verginia.netlify.app/uvaranas">8</a>
+                          </td>
+                          <td style="background:#2eb130;padding:0px;width:25px;height:40px;border-radius:5px;border-bottom:0px solid #2eb130;color:#b9b9b9;font-weight:bold;font-size:20px;border-top:1px solid #ffffff;border-left:1px solid #ffffff;border-right:1px solid #ffffff">
+                            <a href="https://avaliacao-tintas-verginia.netlify.app/uvaranas" style="text-decoration:none;color:#ffffff" target="_blank" data-saferedirecturl="https://avaliacao-tintas-verginia.netlify.app/uvaranas">9</a>
+                          </td>
+                          <td style="background:#2eb130;padding:0px;width:25px;height:40px;border-radius:5px;border-bottom:0px solid #2eb130;color:#b9b9b9;font-weight:bold;font-size:20px;border-top:1px solid #ffffff;border-left:1px solid #ffffff;border-right:1px solid #ffffff">
+                            <a href="https://avaliacao-tintas-verginia.netlify.app/uvaranas" style="text-decoration:none;color:#ffffff" target="_blank" data-saferedirecturl="https://avaliacao-tintas-verginia.netlify.app/uvaranas">10</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5" style="color:#c63241;text-align:left;padding:8px 0">Não recomendo</td>
+                          <td colspan="6" style="color:#2eb130;text-align:right;padding:8px 0">Recomendo muito</td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>         
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="96%" style="max-width:650px; width:96%; margin-top: 10px;">
+              <tr>
+                <td align="center" style="padding:20px 0px 0px 0px;color:#8c8c8c">
+                  <a href="http://www.tintasverginia.com.br" style="color:#8c8c8c;font-size:14px;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://www.magazineluiza.com.br&amp;source=gmail&amp;ust=1628691789223000&amp;usg=AFQjCNF4pao2stnu5FyKx24MLSA6ga6adA">
+                    Obrigada por comprar na <span style="font-weight:bold">Tintas Verginia</span>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="middle" style="padding:5px;font-size:12px;color:#056da5">
+                  <a href="https://api.whatsapp.com/send?phone=5541988081229&text=Ol%C3%A1,%20Fale%20Conosco" style="color:#056da5;font-size:12px;text-decoration:none" target="_blank"
+                    data-saferedirecturl="https://api.whatsapp.com/send?phone=5541988081229&text=Ol%C3%A1,%20Fale%20Conosco">
+                    <table width="auto" border="0" cellpadding="0" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="background:#056da5;border-radius:50%;color:#ffffff;padding:2px 5px">?</td>
+                          <td style="padding:0 5px;text-align:center">Dúvidas ou informações? Clique aqui.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td width="580" valign="bottom" bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-collapse:collapse;">
+                  <table width="640" border="0" cellspacing="0" cellpadding="0" class="expander" style="border-spacing: 0;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                  <tr>
+                    <td bgcolor="#eb1d2a" style="background-color:#d00521;height:5px;width:10%;border-collapse:collapse;"></td>
+                    <td bgcolor="#ef7706" style="background-color:#ec6907;height:5px;width:15%;border-collapse:collapse;"></td>
+                    <td bgcolor="#ffcc00" style="background-color:#ffdf00;height:5px;width:15%;border-collapse:collapse;"></td>
+                    <td bgcolor="#48bac6" style="background-color:#bdcd00;height:5px;width:15%;border-collapse:collapse;"></td>
+                    <td bgcolor="#007ac3" style="background-color:#28a2dc;height:5px;width:15%;border-collapse:collapse;"></td>
+                    <td bgcolor="#7a2d97" style="background-color:#262155;height:5px;width:10%;border-collapse:collapse;"></td>
+                  </tr>
+                </tr>
+            </table>
+            <tr>
+              <td align="center" valign="middle" style="padding:15px">
+                <a href="http://coletacolorida.tintasverginia.com.br/" target="_blank">
+                  
+                  <img src="https://www.tintasverginia.com.br/media/wysiwyg/coleta_colorida.jpg"  border="0" >
+                </a>
+              </td>
+            </tr>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  </html>
